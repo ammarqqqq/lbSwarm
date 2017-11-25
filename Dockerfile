@@ -1,4 +1,4 @@
-FROM nginx:alpine
+FROM nbrown/nginxhello
 COPY config/default.conf /etc/nginx/conf.d
 COPY config/nginx.conf /etc/nginx/nginx.conf
 RUN mkdir /certs
